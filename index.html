@@ -10,14 +10,62 @@
             <ul>
                 <li><a href="#">Home</a></li>
                 <li><a href="#">About</a></li>
-                <li><a href="#">Services</a></li>
+                <li><a href="#">Taking Action</a></li>
                 <li><a href="#">Works Cited</a></li>
             </ul>
         </nav>
     </header>
     
     <main>
-        <!-- Add your content here -->
+        <img src="img/198710_Gay_Pride_event_in_St.jpg" alt="Description of the image" style="width: 100%; height: auto;">
+        <h2>Home</h2>
+            <p> Welcome to my website! Here, you'll find resources, information, and insights into the rich history and ongoing struggles of the LGBTQ+ 
+                community. Whether you're a student, educator, or simply curious about queer identities and experiences, we invite 
+                you to explore and engage with the content we've curated.
+            </p>
+        <h2>History</h2>
+            <p>The history of the LGBTQ+ community is a story of resilience, resistance, and celebration. From the Stonewall Riots of 1969, which sparked 
+                the modern gay rights movement, to the struggles for marriage equality and beyond, queer individuals have fought for recognition, rights, 
+                and dignity. Explore our History section to delve deeper into pivotal moments, key figures, and the ongoing evolution of queer identities.
+            </p>
+            <p> Choose one of the following historical topics to read more about! : </p>
+            <select id="historySelect">
+                <option value="option1">Pre-20th Century</option>
+                <option value="option2">20th Century</option>
+                <option value="option3">Stonewall Riots (1969)</option>
+                <option value="option4">AIDS Crisis (1980s)</option>
+                <option value="option5">Marriage Equality (2000s)</option>
+                <option value="option6">Contemporary Challanges</option>
+                <option value="option7">Intersectionality</option>
+            </select>
+            <p class="historyParagraph" id="option1">The history of LGBTQ+ individuals spans millennia, with evidence of same-sex relationships, gender diversity, and non-binary identities found in cultures worldwide. From the ancient Greeks and Romans, who celebrated love between men in art and literature, to indigenous cultures that revered Two-Spirit individuals, queer identities have existed throughout human history. However, societal attitudes and religious beliefs often led to persecution and marginalization.</p>
+            <p class="historyParagraph" id="option2">The 20th century marked significant milestones and challenges for the LGBTQ+ community. The early part of the century saw the emergence of clandestine queer spaces, such as speakeasies and underground clubs, where individuals could express their identities away from societal scrutiny. However, homosexuality was widely criminalized, and LGBTQ+ individuals faced discrimination, harassment, and violence.</p>
+            <p class="historyParagraph" id="option3">The Stonewall Riots, which erupted in response to a police raid on the Stonewall Inn in New York City's Greenwich Village, are widely regarded as the catalyst for the modern LGBTQ+ rights movement. Led primarily by trans women of color, drag queens, and homeless queer youth, the uprising lasted several days and sparked a wave of activism, protests, and organizing across the United States and beyond.</p>
+            <p class="historyParagraph" id="option4">The 1980s brought the devastating AIDS epidemic, which disproportionately affected gay and bisexual men, as well as transgender individuals and people of color. The crisis laid bare the structural inequalities and discrimination faced by the LGBTQ+ community, while also galvanizing collective action and advocacy for healthcare, research, and HIV/AIDS education.</p>
+            <p class="historyParagraph" id="option5">Throughout the latter half of the 20th century and into the 21st century, LGBTQ+ activists and allies have fought tirelessly for legal recognition and protections. Milestones include the decriminalization of homosexuality, the legalization of same-sex marriage in various countries, and the expansion of anti-discrimination laws to include sexual orientation and gender identity.</p>
+            <p class="historyParagraph" id="option6">Despite significant progress, the LGBTQ+ community continues to face challenges, including ongoing discrimination, violence, and barriers to healthcare and social services. Issues such as transgender rights, conversion therapy, and the rights of LGBTQ+ youth remain contentious topics, highlighting the ongoing need for advocacy and solidarity.</p>
+            <p class="historyParagraph" id="option7">It's essential to recognize that LGBTQ+ identities intersect with other aspects of identity, such as race, ethnicity, class, disability, and immigration status. Understanding the complexities of intersectionality is crucial for addressing the diverse needs and experiences within the LGBTQ+ community and advancing social justice for all marginalized groups.</p>
+        <h2>Taking Action</h2>
+            <p></p>
+        <h2>Works Cited</h2>
+            <p></p>
+        <script>
+            var paragraphs = document.getElementsByClassName('historyParagraph');
+                for (var i = 0; i < paragraphs.length; i++) {
+                    paragraphs[i].style.display = 'none';
+                }
+            document.getElementById('historySelect').addEventListener('change', function() {
+                // Hide all paragraphs
+                var paragraphs = document.getElementsByClassName('historyParagraph');
+                for (var i = 0; i < paragraphs.length; i++) {
+                    paragraphs[i].style.display = 'none';
+                }
+        
+                // Display the selected paragraph
+                var selectedOption = this.value;
+                document.getElementById(selectedOption).style.display = 'block';
+            });
+        </script>
     </main>
     
     <footer>
