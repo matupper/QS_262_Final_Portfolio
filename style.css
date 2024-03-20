@@ -1,6 +1,7 @@
 /* Style for the navigation header */
 body {
     font-family: Arial, sans-serif; /* Set the font family */
+    background-color: beige;
 }
 
 nav {
@@ -27,4 +28,38 @@ nav ul li a {
 
 nav ul li a:hover {
     text-decoration: underline; /* Add underline on hover */
+}
+
+a.resources {
+    display: inline-block;
+    padding: 8px 12px;
+    background-color: #333;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+a.resources:hover {
+    background-color: #555;
+}
+
+#resources-list {
+    display: flex; /* Use flexbox to space the buttons out */
+    flex-direction: column; /* Display the buttons in a vertical list */
+    list-style-type: none; /* Remove the default bullet points */
+    margin: 0; /* Remove the default margin */
+    padding: 0; /* Remove the default padding */
+}
+
+#resources-list li {
+    display: inline-block; /* Display the list items horizontally */
+    margin: 5px; /* Add some spacing between the list items */
+}
+
+#histroy-select {
+    margin: 10px 0; /* Add some spacing */
+    
 }

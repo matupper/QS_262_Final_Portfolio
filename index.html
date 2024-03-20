@@ -8,22 +8,22 @@
     <header>
         <nav>
             <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Taking Action</a></li>
-                <li><a href="#">Works Cited</a></li>
+                <li><a href="#Home">Home</a></li>
+                <li><a href="#History">History</a></li>
+                <li><a href="#Action">Taking Action</a></li>
+                <li><a href="#Cited">Works Cited</a></li>
             </ul>
         </nav>
     </header>
     
     <main>
-        <img src="img/198710_Gay_Pride_event_in_St.jpg" alt="Description of the image" style="width: 100%; height: auto;">
-        <h2>Home</h2>
+        <img src="img/198710_Gay_Pride_event_in_St.jpg" alt="LGBTQ protest banner image" style="width: 100%; height: auto;">
+        <h2 id="Home">Home</h2>
             <p> Welcome to my website! Here, you'll find resources, information, and insights into the rich history and ongoing struggles of the LGBTQ+ 
                 community. Whether you're a student, educator, or simply curious about queer identities and experiences, we invite 
                 you to explore and engage with the content we've curated.
             </p>
-        <h2>History</h2>
+        <h2 id="History">History</h2>
             <p>The history of the LGBTQ+ community is a story of resilience, resistance, and celebration. From the Stonewall Riots of 1969, which sparked 
                 the modern gay rights movement, to the struggles for marriage equality and beyond, queer individuals have fought for recognition, rights, 
                 and dignity. Explore our History section to delve deeper into pivotal moments, key figures, and the ongoing evolution of queer identities.
@@ -45,10 +45,31 @@
             <p class="historyParagraph" id="option5">Throughout the latter half of the 20th century and into the 21st century, LGBTQ+ activists and allies have fought tirelessly for legal recognition and protections. Milestones include the decriminalization of homosexuality, the legalization of same-sex marriage in various countries, and the expansion of anti-discrimination laws to include sexual orientation and gender identity.</p>
             <p class="historyParagraph" id="option6">Despite significant progress, the LGBTQ+ community continues to face challenges, including ongoing discrimination, violence, and barriers to healthcare and social services. Issues such as transgender rights, conversion therapy, and the rights of LGBTQ+ youth remain contentious topics, highlighting the ongoing need for advocacy and solidarity.</p>
             <p class="historyParagraph" id="option7">It's essential to recognize that LGBTQ+ identities intersect with other aspects of identity, such as race, ethnicity, class, disability, and immigration status. Understanding the complexities of intersectionality is crucial for addressing the diverse needs and experiences within the LGBTQ+ community and advancing social justice for all marginalized groups.</p>
-        <h2>Taking Action</h2>
-            <p></p>
-        <h2>Works Cited</h2>
-            <p></p>
+        <h2 id="Action">Taking Action</h2>
+            <p>Taking action is crucial for advancing LGBTQ+ rights and fostering a more inclusive society. In this section, we provide resources and suggestions for activism, allyship, and advocacy. Whether it's participating in Pride events, supporting LGBTQ+-owned businesses, or educating others about queer issues, there are numerous ways to make a positive impact. Discover how you can contribute to creating a world where everyone can live authentically and without fear of discrimination.<br>
+                <br>
+                Here is a collection of recourses to help you take action:<br>
+                <ul id="resources-list">
+                    <li><a class="resources" href="https://www.hrc.org/resources">Human Rights Campaign</a></li>
+                    <li><a class="resources" href="https://www.glaad.org/resources">GLAAD</a></li>
+                    <li><a class="resources" href="https://www.thetrevorproject.org/resources/">The Trevor Project</a></li>
+                    <li><a class="resources" href="https://www.lambdalegal.org/know-your-rights">Lambda Legal</a></li>
+                </ul>
+                <p>
+                Ofcourse, if you yourself are a student, another great way to get involved is to take a class on LGBTQ+ history, or join a club or organization that supports the LGBTQ+ community. If you are an educator, you can incorporate LGBTQ+ history and issues into your curriculum, and create a safe and inclusive environment for all students. No matter who you are, there are countless ways to take action and make a difference. Together, we can create a more equitable and affirming world for LGBTQ+ individuals.
+                </p>
+            </p>
+        <h2 id="Cited">Works Cited</h2>
+            <p>Our Works Cited section features a curated list of books, articles, documentaries, and other media related to Queer studies. These resources provide valuable insights into various aspects of LGBTQ+ history, culture, theory, and activism. Whether you're conducting research, seeking further reading recommendations, or simply interested in learning more, our Works Cited list is a valuable starting point for expanding your knowledge and understanding of queer experiences.
+                <br>
+                <ul>
+                    <li>Human Rights Campaign. "Resources." HRC.org, https://www.hrc.org/resources.</li>
+                    <li>GLAAD. "Resources." GLAAD.org, https://www.glaad.org/resources.</li>
+                    <li>The Trevor Project. "Resources." TheTrevorProject.org, https://www.thetrevorproject.org/resources/.</li>
+                    <li>Lambda Legal. "Know Your Rights." LambdaLegal.org, https://www.lambdalegal.org/know-your-rights.</li>
+                    <li>Human Rights Campaign. "Working for Lesbian, Gay, Bisexual, Transgender, and Queer Equal Rights." HRC.org, https://www.hrc.org/.
+                </ul>
+            </p>
         <script>
             var paragraphs = document.getElementsByClassName('historyParagraph');
                 for (var i = 0; i < paragraphs.length; i++) {
@@ -69,7 +90,9 @@
     </main>
     
     <footer>
-        <!-- Add your footer content here -->
+        <div class="footer-content">
+            <p>&copy; 2024 Matias Tupper - Final Portfolio</p>
+        </div>
     </footer>
 </body>
 </html>
